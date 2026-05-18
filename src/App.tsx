@@ -403,7 +403,7 @@ useEffect(() => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-brand-white/80 via-brand-white/40 to-brand-white z-10" />
           <img 
-            src="/src/assets/images/hero_prayer_ukraine_1779118225170.png" 
+            src="/images/hero-prayer-ukraine.png" 
             alt="Prayer background" 
             className="w-full h-full object-cover grayscale opacity-30 max-md:object-[30%_center]" 
           />
@@ -508,7 +508,7 @@ useEffect(() => {
           </div>
           <div className="relative">
             <div className="aspect-square bg-brand-rose/20 rounded-3xl overflow-hidden shadow-inner">
-               <img src="/src/assets/images/hero_prayer_ukraine_1779118225170.png" className="w-full h-full object-cover opacity-60 mix-blend-multiply" />
+               <img src="/images/hero-prayer-ukraine.png" className="w-full h-full object-cover opacity-60 mix-blend-multiply" />
             </div>
             <div className="absolute -bottom-8 -right-8 p-8 bg-brand-red text-white rounded-2xl shadow-xl max-w-xs">
               <p className="font-serif italic text-lg">“Одна молитва може змінити історію цілого народу.”</p>
@@ -721,7 +721,7 @@ useEffect(() => {
 <section className="py-32 relative overflow-hidden bg-brand-charcoal text-white text-center">
   <div className="absolute inset-0 opacity-10 blur-sm pointer-events-none">
     <img
-      src="/src/assets/images/hero_prayer_ukraine_1779118225170.png"
+      src="/images/hero-prayer-ukraine.png"
       className="w-full h-full object-cover"
     />
   </div>
