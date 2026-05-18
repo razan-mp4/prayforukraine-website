@@ -23,8 +23,8 @@ jobs:
             echo "Going to project folder..."
             cd /var/www/prayforukraine/prayforukraine-website
 
-            echo "Checking current branch..."
-            git status
+            echo "Making sure database storage exists..."
+            mkdir -p /var/www/prayforukraine/storage
 
             echo "Pulling latest code..."
             git pull origin main
