@@ -1,0 +1,21 @@
+{
+  "name": "Вечір молитви за Україну в Лондоні",
+  "short_name": "Pray for Ukraine",
+  "description": "Вечір молитви та поклоніння за Україну в Лондоні.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffafa",
+  "theme_color": "#b91c1c",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

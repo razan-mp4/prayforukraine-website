@@ -1,0 +1,8 @@
+{
+  "name": "Вечір молитви за Україну — Лондон",
+  "description": "Молитовний вечір «Ісус Христос — дорога, правда і життя для України» в Лондоні. Поклоніння, єдність та молитва за Україну.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
