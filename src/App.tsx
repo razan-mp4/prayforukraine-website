@@ -400,15 +400,18 @@ useEffect(() => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-24 pb-20">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-white/80 via-brand-white/40 to-brand-white z-10" />
-          <img 
-            src="/images/hero-prayer-ukraine.png" 
-            alt="Prayer background" 
-            className="w-full h-full object-cover grayscale opacity-30 max-md:object-[30%_center]" 
-          />
-          <div className="ukrainian-pattern absolute inset-0 z-0" />
-        </div>
+<div className="absolute inset-0 z-0">
+  <div className="absolute inset-0 bg-gradient-to-r from-brand-white/95 via-brand-white/60 to-brand-white/15 z-10" />
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-white/70 z-10" />
+
+  <img 
+    src="/images/hero-prayer-ukraine.png" 
+    alt="Prayer background" 
+    className="w-full h-full object-cover grayscale opacity-70 max-md:object-[70%_center]" 
+  />
+
+  <div className="ukrainian-pattern absolute inset-0 z-0 opacity-30" />
+</div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-20 w-full">
           <div className="max-w-3xl">
