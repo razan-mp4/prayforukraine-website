@@ -407,7 +407,7 @@ useEffect(() => {
   <img 
     src="/images/hero-prayer-ukraine.png" 
     alt="Prayer background" 
-    className="w-full h-full object-cover grayscale opacity-70 max-md:object-[70%_center]" 
+    className="w-full h-full object-cover grayscale opacity-70 max-md:object-[30%_center]" 
   />
 
   <div className="ukrainian-pattern absolute inset-0 z-0 opacity-30" />
