@@ -401,13 +401,12 @@ useEffect(() => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-24 pb-20">
 <div className="absolute inset-0 z-0">
-  <div className="absolute inset-0 bg-gradient-to-r from-brand-white/95 via-brand-white/60 to-brand-white/15 z-10" />
-  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-white/70 z-10" />
-
+  <div className="absolute inset-0 bg-gradient-to-r from-brand-white/85 via-brand-white/35 to-transparent z-10" />
+<div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brand-white/45 z-10" />
   <img 
     src="/images/hero-prayer-ukraine.png" 
     alt="Prayer background" 
-    className="w-full h-full object-cover grayscale opacity-70 max-md:object-[30%_center]" 
+    className="w-full h-full object-cover grayscale opacity-90 max-md:object-[30%_center]" 
   />
 
   <div className="ukrainian-pattern absolute inset-0 z-0 opacity-30" />
