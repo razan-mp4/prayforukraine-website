@@ -1306,20 +1306,23 @@ const PublicSite = () => {
 
       <section id="register" className="relative overflow-hidden bg-[#111720] px-5 py-20 md:px-6 md:py-32">
         <div className="absolute left-[-10%] top-[-20%] h-[30rem] w-[30rem] rounded-full bg-[#B7EFFF]/10 blur-3xl" />
-        <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="min-w-0">
+        <div className="relative mx-auto max-w-7xl">
+          <div className="relative z-10 mb-8 max-w-5xl md:mb-12 lg:mb-14">
             <p className="mb-4 font-['Inter'] text-[11px] font-bold uppercase tracking-[0.22em] text-[#B7EFFF] md:text-xs">Реєстрація</p>
-            <h2 className="max-w-full font-['Unbounded'] text-[clamp(1.62rem,7vw,2.2rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-6xl md:leading-[1.12]">
+            <h2 className="font-['Unbounded'] text-[clamp(1.62rem,7vw,2.2rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-[3.4rem] md:leading-[1.12] lg:text-[4.1rem] lg:leading-[1.08] xl:text-[4.8rem]">
               <span className="block whitespace-nowrap">Зареєструйся</span>
-              <span className="block">на вечір</span>
+              <span className="block whitespace-nowrap">на вечір</span>
             </h2>
-            <p className="mt-5 max-w-xl font-['Inter'] text-base leading-7 text-[#8A9AAF] md:mt-7 md:text-lg md:leading-8">
-              Заповни коротку форму, щоб ми могли підготувати місце та краще організувати вечір.
-            </p>
           </div>
 
-          <div className="w-full min-w-0 rounded-[1.6rem] border border-[#B7EFFF]/20 bg-[#0A0E14]/80 p-5 shadow-2xl shadow-black/40 backdrop-blur md:rounded-[2rem] md:p-10">
-            <NewRegistrationForm />
+          <div className="relative z-20 grid gap-8 lg:grid-cols-[minmax(260px,0.55fr)_minmax(0,1.45fr)] lg:items-start xl:grid-cols-[minmax(320px,0.6fr)_minmax(0,1.4fr)]">
+            <p className="max-w-[34rem] font-['Inter'] text-base leading-7 text-[#8A9AAF] md:text-lg md:leading-8 lg:pt-7">
+              Заповни коротку форму, щоб ми могли підготувати місце та краще організувати вечір.
+            </p>
+
+            <div className="w-full min-w-0 rounded-[1.6rem] border border-[#B7EFFF]/20 bg-[#0A0E14]/80 p-5 shadow-2xl shadow-black/40 backdrop-blur md:rounded-[2rem] md:p-10">
+              <NewRegistrationForm />
+            </div>
           </div>
         </div>
       </section>
