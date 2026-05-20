@@ -4,8 +4,8 @@
   "description": "Вечір молитви та поклоніння за Україну в Лондоні.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fffafa",
-  "theme_color": "#b91c1c",
+  "background_color": "#0A0E14",
+  "theme_color": "#0A0E14",
   "icons": [
     {
       "src": "/favicon-96x96.png",
