@@ -855,7 +855,7 @@ const NewRegistrationForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit} noValidate className="space-y-4 md:space-y-5">
       <div className="grid gap-4 md:grid-cols-2">
         <div>
           <label className="mb-2 block font-['Inter'] text-xs font-semibold uppercase tracking-[0.16em] text-[#B7EFFF]/80">Ім’я</label>
@@ -863,7 +863,7 @@ const NewRegistrationForm = () => {
             type="text"
             minLength={2}
             maxLength={30}
-            className={`w-full rounded-2xl border bg-white/[0.04] px-5 py-4 font-['Inter'] text-white outline-none transition placeholder:text-[#8A9AAF]/60 ${
+            className={`w-full rounded-2xl border bg-white/[0.04] px-4 py-3.5 font-['Inter'] text-base text-white outline-none transition placeholder:text-[#8A9AAF]/60 md:px-5 md:py-4 ${
               fieldErrors.firstName ? 'border-[#B7EFFF]' : 'border-white/10 focus:border-[#B7EFFF]/70'
             }`}
             placeholder="Ваше ім’я"
@@ -882,7 +882,7 @@ const NewRegistrationForm = () => {
             type="text"
             minLength={2}
             maxLength={40}
-            className={`w-full rounded-2xl border bg-white/[0.04] px-5 py-4 font-['Inter'] text-white outline-none transition placeholder:text-[#8A9AAF]/60 ${
+            className={`w-full rounded-2xl border bg-white/[0.04] px-4 py-3.5 font-['Inter'] text-base text-white outline-none transition placeholder:text-[#8A9AAF]/60 md:px-5 md:py-4 ${
               fieldErrors.lastName ? 'border-[#B7EFFF]' : 'border-white/10 focus:border-[#B7EFFF]/70'
             }`}
             placeholder="Ваше прізвище"
@@ -901,7 +901,7 @@ const NewRegistrationForm = () => {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-[#B7EFFF] px-8 py-5 font-['Inter'] text-sm font-bold uppercase tracking-[0.18em] text-[#0A0E14] transition hover:scale-[1.01] hover:bg-white disabled:opacity-60"
+        className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-[#B7EFFF] px-5 py-[1.1rem] font-['Inter'] text-[13px] font-bold uppercase tracking-[0.16em] text-[#0A0E14] transition hover:scale-[1.01] hover:bg-white disabled:opacity-60 md:px-8 md:py-5 md:text-sm md:tracking-[0.18em]"
       >
         {status === 'loading' ? 'Обробка...' : <>Зареєструватися <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" /></>}
       </button>
@@ -1278,18 +1278,18 @@ const PublicSite = () => {
         </div>
       </section>
 
-      <section id="register" className="relative overflow-hidden bg-[#111720] px-6 py-24 md:py-32">
+      <section id="register" className="relative overflow-hidden bg-[#111720] px-5 py-20 md:px-6 md:py-32">
         <div className="absolute left-[-10%] top-[-20%] h-[30rem] w-[30rem] rounded-full bg-[#B7EFFF]/10 blur-3xl" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div>
-            <p className="mb-5 font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Реєстрація</p>
-            <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] tracking-[-0.04em] md:text-6xl">Зареєструйся на вечір</h2>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-[#8A9AAF]">
+        <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="min-w-0">
+            <p className="mb-4 font-['Inter'] text-[11px] font-bold uppercase tracking-[0.22em] text-[#B7EFFF] md:text-xs">Реєстрація</p>
+            <h2 className="max-w-full break-words font-['Unbounded'] text-[clamp(2.05rem,9.3vw,3rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-6xl md:leading-[1.12]">Зареєструйся на вечір</h2>
+            <p className="mt-5 max-w-xl font-['Inter'] text-base leading-7 text-[#8A9AAF] md:mt-7 md:text-lg md:leading-8">
               Заповни коротку форму, щоб ми могли підготувати місце та краще організувати вечір.
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-[#B7EFFF]/20 bg-[#0A0E14]/80 p-6 shadow-2xl shadow-black/40 backdrop-blur md:p-10">
+          <div className="w-full min-w-0 rounded-[1.6rem] border border-[#B7EFFF]/20 bg-[#0A0E14]/80 p-5 shadow-2xl shadow-black/40 backdrop-blur md:rounded-[2rem] md:p-10">
             <NewRegistrationForm />
           </div>
         </div>
