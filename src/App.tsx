@@ -1038,10 +1038,10 @@ const PublicSite = () => {
           <img
             src="/images/hero-prayer-ukraine.png"
             alt="Prayer background"
-            className="h-full w-full object-cover opacity-92 grayscale max-md:object-[68%_center]"
+            className="h-full w-full object-cover opacity-88 grayscale max-md:object-[68%_center]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E14]/84 via-[#0A0E14]/58 to-[#0A0E14]/18" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E14]/14 via-transparent to-[#0A0E14]/88" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E14]/88 via-[#0A0E14]/62 to-[#0A0E14]/24" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E14]/18 via-transparent to-[#0A0E14]/90" />
           <div className="absolute right-[-12%] top-[18%] h-[34rem] w-[34rem] rounded-full bg-[#B7EFFF]/10 blur-3xl" />
         </div>
 
@@ -1228,7 +1228,7 @@ const PublicSite = () => {
               <iframe
                 title="East London Tabernacle Baptist Church map"
                 src="https://www.google.com/maps?q=East%20London%20Tabernacle%20Baptist%20Church%2015%20Burdett%20Road%20London%20E3%204TU&output=embed"
-                className="h-full min-h-[420px] w-full border-0 grayscale invert-[0.9] contrast-125"
+                className="h-full min-h-[420px] w-full border-0 grayscale-[35%] contrast-95 saturate-[0.75] brightness-[0.82]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
