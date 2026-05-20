@@ -730,7 +730,7 @@ useEffect(() => {
 
   <div className="max-w-7xl mx-auto px-6 relative z-10">
     <h2 className="text-4xl md:text-6xl font-serif font-bold mb-12">
-      13 червня. Лондон. <br /> Одна молитва за Україну.
+      13 червня. Лондон. <br /> Молитва за Україну.
     </h2>
 
     <div className="flex flex-col items-center gap-10">
@@ -1053,9 +1053,9 @@ const PublicSite = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               style={{ fontFamily: '"Unbounded", "Inter", system-ui, sans-serif', fontWeight: 900 }}
-              className="max-w-[94vw] text-[clamp(3rem,12vw,4.5rem)] uppercase leading-[0.95] tracking-[-0.055em] max-md:mx-auto max-md:text-center sm:text-[clamp(3.5rem,8vw,5.6rem)] lg:max-w-4xl lg:text-[clamp(4.75rem,5.7vw,5.9rem)] lg:leading-[0.88]"
+              className="max-w-[92vw] text-[clamp(2.55rem,10.4vw,4rem)] uppercase leading-[1.16] tracking-[-0.03em] max-md:mx-auto max-md:text-center sm:text-[clamp(3rem,7vw,4.8rem)] lg:max-w-4xl lg:text-[clamp(3.95rem,4.75vw,5.1rem)] lg:leading-[1.1] lg:tracking-[-0.045em]"
             >
-              <span className="block whitespace-nowrap text-[0.68em] sm:text-[0.82em] lg:text-[0.95em]">Ісус Христос —</span>
+              <span className="mb-1 block whitespace-nowrap text-[0.66em] sm:text-[0.78em] lg:mb-2 lg:text-[0.92em]">Ісус Христос —</span>
               <span className="block text-[#B7EFFF]">дорога,<br />правда і життя</span>
             </motion.h1>
 
@@ -1064,7 +1064,7 @@ const PublicSite = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.16 }}
               style={{ fontFamily: '"Unbounded", "Inter", system-ui, sans-serif', fontWeight: 900 }}
-              className="mt-5 max-w-[88vw] text-[1.45rem] uppercase leading-[1.08] tracking-[-0.025em] text-white/25 max-md:mx-auto max-md:text-center sm:text-4xl md:max-w-2xl md:text-5xl"
+              className="mt-6 max-w-[88vw] text-[1.25rem] uppercase leading-[1.25] tracking-[-0.01em] text-white/25 max-md:mx-auto max-md:text-center sm:text-3xl md:max-w-2xl md:text-4xl"
             >
               Вечір молитви за Україну
             </motion.p>
@@ -1115,7 +1115,7 @@ const PublicSite = () => {
           >
             <div className="rounded-[2.5rem] border border-[#B7EFFF]/20 bg-[#111720]/80 p-8 shadow-2xl shadow-black/40 backdrop-blur">
               <p className="mb-5 font-['Inter'] text-xs font-semibold uppercase tracking-[0.18em] text-[#B7EFFF]/80">13 червня · Лондон</p>
-              <p className="font-['Unbounded'] text-3xl font-black uppercase leading-tight text-white">Одна молитва за Україну</p>
+              <p className="font-['Unbounded'] text-3xl font-black uppercase leading-[1.15] text-white">Молитва за Україну</p>
               <div className="mt-8 grid grid-cols-2 gap-4 border-t border-white/10 pt-8">
                 <div>
                   <p className="font-['Bebas_Neue'] text-6xl leading-none text-[#B7EFFF]">13</p>
@@ -1136,7 +1136,7 @@ const PublicSite = () => {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="mb-5 font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Хто ми?</p>
-            <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white md:text-6xl">
+            <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] tracking-[-0.04em] text-white md:text-6xl">
               Одна молитва. <span className="text-[#B7EFFF]">Одна надія.</span>
             </h2>
           </div>
@@ -1180,7 +1180,7 @@ const PublicSite = () => {
       <section className="bg-[#111720] px-6 py-24 md:py-32">
         <div className="mx-auto max-w-7xl">
           <p className="mb-5 text-center font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Дорога. Правда. Життя.</p>
-          <h2 className="mx-auto mb-16 max-w-4xl text-center font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] md:text-6xl">Христос — наша надія для України</h2>
+          <h2 className="mx-auto mb-16 max-w-4xl text-center font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] md:text-6xl">Христос — наша надія для України</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               { title: 'Дорога', desc: 'Коли Україна шукає шлях вперед, ми віримо, що Христос веде.', icon: Compass },
@@ -1202,7 +1202,7 @@ const PublicSite = () => {
           <div className="mb-14 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="mb-5 font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Де і коли?</p>
-              <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] md:text-6xl">Деталі вечора</h2>
+              <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] md:text-6xl">Деталі вечора</h2>
             </div>
             <p className="max-w-xl text-[#8A9AAF]">Вхід вільний. Будь ласка, зареєструйтеся заздалегідь, щоб ми могли краще підготуватися.</p>
           </div>
@@ -1242,7 +1242,7 @@ const PublicSite = () => {
       <section id="programme" className="bg-[#111720] px-6 py-24 md:py-32">
         <div className="mx-auto max-w-4xl">
           <p className="mb-5 text-center font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Програма вечора</p>
-          <h2 className="mb-16 text-center font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] md:text-6xl">13 червня</h2>
+          <h2 className="mb-16 text-center font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] md:text-6xl">13 червня</h2>
 
           <div className="space-y-5">
             {[
@@ -1270,7 +1270,7 @@ const PublicSite = () => {
 
       <section className="bg-[#0A0E14] px-6 py-24 md:py-32">
         <div className="mx-auto max-w-7xl text-center">
-          <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] md:text-6xl">Церкви разом за Україну</h2>
+          <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] md:text-6xl">Церкви разом за Україну</h2>
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-[#8A9AAF]">Різні міста. Різні деномінації. Одна молитва — за Україну.</p>
           <div className="mt-14 flex flex-wrap justify-center gap-x-6 gap-y-4 font-['Bebas_Neue'] text-3xl tracking-wide text-[#8A9AAF]/60 md:text-5xl">
             <span>London</span><span className="text-[#B7EFFF]/50">/</span><span>Manchester</span><span className="text-[#B7EFFF]/50">/</span><span>Birmingham</span><span className="text-[#B7EFFF]/50">/</span><span>Bristol</span><span className="text-[#B7EFFF]/50">/</span><span>Leeds</span><span className="text-white">та інші</span>
@@ -1283,7 +1283,7 @@ const PublicSite = () => {
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <p className="mb-5 font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Реєстрація</p>
-            <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] tracking-[-0.04em] md:text-6xl">Зареєструйся на вечір</h2>
+            <h2 className="font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] tracking-[-0.04em] md:text-6xl">Зареєструйся на вечір</h2>
             <p className="mt-7 max-w-xl text-lg leading-8 text-[#8A9AAF]">
               Заповни коротку форму, щоб ми могли підготувати місце та краще організувати вечір.
             </p>
@@ -1298,7 +1298,7 @@ const PublicSite = () => {
       <section className="bg-[#0A0E14] px-6 py-24 text-center">
         <div className="mx-auto max-w-5xl">
           <p className="mb-5 font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">До події залишилось</p>
-          <h2 className="mb-12 font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] tracking-[-0.04em] md:text-6xl">13 червня. Лондон.</h2>
+          <h2 className="mb-12 font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] tracking-[-0.04em] md:text-6xl">13 червня. Лондон.</h2>
           <NewCountdown targetDate={EVENT_DATE} />
           <a href="#register" className="mt-12 inline-flex rounded-full bg-[#B7EFFF] px-8 py-4 font-['Inter'] text-sm font-bold uppercase tracking-[0.16em] text-[#0A0E14] transition hover:bg-white">
             Зареєструватись →
@@ -1309,7 +1309,7 @@ const PublicSite = () => {
       <section className="bg-[#111720] px-6 py-24 md:py-32">
         <div className="mx-auto max-w-3xl">
           <p className="mb-5 text-center font-['Inter'] text-xs font-bold uppercase tracking-[0.22em] text-[#B7EFFF]">Поширені питання</p>
-          <h2 className="mb-14 text-center font-['Unbounded'] text-4xl font-black uppercase leading-[0.95] md:text-6xl">FAQ</h2>
+          <h2 className="mb-14 text-center font-['Unbounded'] text-4xl font-black uppercase leading-[1.12] md:text-6xl">FAQ</h2>
           <div className="grid gap-5">
             {[
               { q: 'Чи потрібно платити за вхід?', a: 'Ні, вхід вільний. Ми будемо раді бачити кожного.' },
