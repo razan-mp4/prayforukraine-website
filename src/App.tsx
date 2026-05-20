@@ -971,8 +971,11 @@ const PublicSite = () => {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
+    document.documentElement.style.overflow = menuOpen ? 'hidden' : '';
+
     return () => {
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     };
   }, [menuOpen]);
 
@@ -1014,7 +1017,7 @@ const PublicSite = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[99999] flex h-screen w-screen flex-col bg-[#0A0E14] p-8 md:hidden"
+            className="fixed left-0 right-0 top-0 bottom-[-35vh] z-[99999] flex min-h-[135dvh] w-screen flex-col overflow-hidden bg-[#0A0E14] p-8 pb-[calc(2rem+env(safe-area-inset-bottom))] md:hidden"
           >
             <div className="flex justify-end">
               <button onClick={() => setMenuOpen(false)} aria-label="Close menu">
@@ -1283,7 +1286,10 @@ const PublicSite = () => {
         <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="min-w-0">
             <p className="mb-4 font-['Inter'] text-[11px] font-bold uppercase tracking-[0.22em] text-[#B7EFFF] md:text-xs">Реєстрація</p>
-            <h2 className="max-w-full break-words font-['Unbounded'] text-[clamp(2.05rem,9.3vw,3rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-6xl md:leading-[1.12]">Зареєструйся на вечір</h2>
+            <h2 className="max-w-full font-['Unbounded'] text-[clamp(1.78rem,7.6vw,2.45rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-6xl md:leading-[1.12]">
+              <span className="block whitespace-nowrap">Зареєструйся</span>
+              <span className="block">на вечір</span>
+            </h2>
             <p className="mt-5 max-w-xl font-['Inter'] text-base leading-7 text-[#8A9AAF] md:mt-7 md:text-lg md:leading-8">
               Заповни коротку форму, щоб ми могли підготувати місце та краще організувати вечір.
             </p>
