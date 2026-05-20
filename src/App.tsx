@@ -1038,23 +1038,23 @@ const PublicSite = () => {
           <img
             src="/images/hero-prayer-ukraine.png"
             alt="Prayer background"
-            className="h-full w-full object-cover opacity-95 grayscale max-md:object-[68%_center]"
+            className="h-full w-full object-cover opacity-92 grayscale max-md:object-[68%_center]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E14]/78 via-[#0A0E14]/48 to-[#0A0E14]/8" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E14]/8 via-transparent to-[#0A0E14]/82" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E14]/84 via-[#0A0E14]/58 to-[#0A0E14]/18" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E14]/14 via-transparent to-[#0A0E14]/88" />
           <div className="absolute right-[-12%] top-[18%] h-[34rem] w-[34rem] rounded-full bg-[#B7EFFF]/10 blur-3xl" />
         </div>
 
         <div className="relative z-10 mx-auto grid min-h-[calc(100svh-7rem)] max-w-7xl gap-8 px-6 pb-8 lg:min-h-[calc(100vh-8rem)] lg:items-center lg:gap-12 lg:py-16 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="flex min-h-[calc(100svh-8.5rem)] flex-col lg:min-h-0 lg:block">
+          <div className="flex min-h-[calc(100svh-8.5rem)] flex-col lg:min-h-0 lg:block lg:-translate-y-8 xl:-translate-y-10">
             <div className="pt-[5vh] sm:pt-[8vh] lg:pt-0">
             <motion.h1
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="max-w-[94vw] font-['Unbounded'] text-[clamp(2.55rem,10.7vw,4.15rem)] font-black uppercase leading-[0.98] tracking-[-0.045em] sm:text-[clamp(3.25rem,8vw,5.5rem)] lg:max-w-4xl lg:text-[clamp(4.55rem,5.55vw,5.65rem)] lg:leading-[0.9]"
+              className="max-w-[94vw] font-['Unbounded'] text-[clamp(2.75rem,11.5vw,4.35rem)] font-black uppercase leading-[1.02] tracking-[-0.045em] max-md:mx-auto max-md:text-center sm:text-[clamp(3.35rem,8vw,5.5rem)] lg:max-w-4xl lg:text-[clamp(4.55rem,5.55vw,5.65rem)] lg:leading-[0.9]"
             >
-              <span className="block whitespace-nowrap text-[0.72em] sm:text-[0.82em] lg:text-[0.95em]">Ісус Христос —</span>
+              <span className="block whitespace-nowrap text-[0.68em] sm:text-[0.82em] lg:text-[0.95em]">Ісус Христос —</span>
               <span className="block text-[#B7EFFF]">дорога,<br />правда і життя</span>
             </motion.h1>
 
@@ -1062,7 +1062,7 @@ const PublicSite = () => {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.16 }}
-              className="mt-5 max-w-[88vw] font-['Unbounded'] text-[1.45rem] font-black uppercase leading-[1.06] tracking-[-0.025em] text-white/25 sm:text-4xl md:max-w-2xl md:text-5xl"
+              className="mt-5 max-w-[88vw] font-['Unbounded'] text-[1.45rem] font-black uppercase leading-[1.08] tracking-[-0.025em] text-white/25 max-md:mx-auto max-md:text-center sm:text-4xl md:max-w-2xl md:text-5xl"
             >
               Вечір молитви за Україну
             </motion.p>
