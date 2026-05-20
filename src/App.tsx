@@ -970,12 +970,28 @@ const PublicSite = () => {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : '';
-    document.documentElement.style.overflow = menuOpen ? 'hidden' : '';
+    if (!menuOpen) return;
+
+    const scrollY = window.scrollY;
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousHtmlOverflow = document.documentElement.style.overflow;
+    const previousBodyPosition = document.body.style.position;
+    const previousBodyTop = document.body.style.top;
+    const previousBodyWidth = document.body.style.width;
+
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
 
     return () => {
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
+      document.documentElement.style.overflow = previousHtmlOverflow;
+      document.body.style.overflow = previousBodyOverflow;
+      document.body.style.position = previousBodyPosition;
+      document.body.style.top = previousBodyTop;
+      document.body.style.width = previousBodyWidth;
+      window.scrollTo(0, scrollY);
     };
   }, [menuOpen]);
 
@@ -1017,7 +1033,14 @@ const PublicSite = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.25 }}
-            className="fixed left-0 right-0 top-0 bottom-[-35vh] z-[99999] flex min-h-[135dvh] w-screen flex-col overflow-hidden bg-[#0A0E14] p-8 pb-[calc(2rem+env(safe-area-inset-bottom))] md:hidden"
+            className="fixed left-0 right-0 top-0 z-[99999] flex w-screen flex-col overflow-hidden bg-[#0A0E14] p-8 pb-[calc(2rem+env(safe-area-inset-bottom))] md:hidden"
+            style={{
+              height: 'calc(100dvh + 180px)',
+              minHeight: 'calc(100vh + 180px)',
+              bottom: '-180px',
+              backgroundColor: '#0A0E14',
+              overscrollBehavior: 'none'
+            }}
           >
             <div className="flex justify-end">
               <button onClick={() => setMenuOpen(false)} aria-label="Close menu">
@@ -1286,7 +1309,7 @@ const PublicSite = () => {
         <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="min-w-0">
             <p className="mb-4 font-['Inter'] text-[11px] font-bold uppercase tracking-[0.22em] text-[#B7EFFF] md:text-xs">Реєстрація</p>
-            <h2 className="max-w-full font-['Unbounded'] text-[clamp(1.78rem,7.6vw,2.45rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-6xl md:leading-[1.12]">
+            <h2 className="max-w-full font-['Unbounded'] text-[clamp(1.62rem,7vw,2.2rem)] font-black uppercase leading-[1.16] tracking-[-0.035em] text-white md:text-6xl md:leading-[1.12]">
               <span className="block whitespace-nowrap">Зареєструйся</span>
               <span className="block">на вечір</span>
             </h2>
