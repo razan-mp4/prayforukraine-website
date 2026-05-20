@@ -1038,7 +1038,7 @@ const PublicSite = () => {
           <img
             src="/images/hero-prayer-ukraine.png"
             alt="Prayer background"
-            className="h-full w-full object-cover opacity-88 grayscale max-md:object-[68%_center]"
+            className="h-full w-full object-cover opacity-[0.88] grayscale max-md:object-[68%_center]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E14]/88 via-[#0A0E14]/62 to-[#0A0E14]/24" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E14]/18 via-transparent to-[#0A0E14]/90" />
@@ -1052,7 +1052,8 @@ const PublicSite = () => {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="max-w-[94vw] font-['Unbounded'] text-[clamp(2.75rem,11.5vw,4.35rem)] font-black uppercase leading-[1.02] tracking-[-0.045em] max-md:mx-auto max-md:text-center sm:text-[clamp(3.35rem,8vw,5.5rem)] lg:max-w-4xl lg:text-[clamp(4.55rem,5.55vw,5.65rem)] lg:leading-[0.9]"
+              style={{ fontFamily: '"Unbounded", "Inter", system-ui, sans-serif', fontWeight: 900 }}
+              className="max-w-[94vw] text-[clamp(3rem,12vw,4.5rem)] uppercase leading-[0.95] tracking-[-0.055em] max-md:mx-auto max-md:text-center sm:text-[clamp(3.5rem,8vw,5.6rem)] lg:max-w-4xl lg:text-[clamp(4.75rem,5.7vw,5.9rem)] lg:leading-[0.88]"
             >
               <span className="block whitespace-nowrap text-[0.68em] sm:text-[0.82em] lg:text-[0.95em]">Ісус Христос —</span>
               <span className="block text-[#B7EFFF]">дорога,<br />правда і життя</span>
@@ -1062,7 +1063,8 @@ const PublicSite = () => {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.16 }}
-              className="mt-5 max-w-[88vw] font-['Unbounded'] text-[1.45rem] font-black uppercase leading-[1.08] tracking-[-0.025em] text-white/25 max-md:mx-auto max-md:text-center sm:text-4xl md:max-w-2xl md:text-5xl"
+              style={{ fontFamily: '"Unbounded", "Inter", system-ui, sans-serif', fontWeight: 900 }}
+              className="mt-5 max-w-[88vw] text-[1.45rem] uppercase leading-[1.08] tracking-[-0.025em] text-white/25 max-md:mx-auto max-md:text-center sm:text-4xl md:max-w-2xl md:text-5xl"
             >
               Вечір молитви за Україну
             </motion.p>
